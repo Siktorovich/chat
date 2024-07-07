@@ -4,12 +4,12 @@ import (
 	"log"
 	"net/http"
 
-	impl "github.com/siktorovich/chat/internal/app/chat"
+	impl "chat/internal/app/chat"
 )
 
 func init() {
 	http.HandleFunc("/", impl.IndexHandler)
-	http.HandleFunc("/ws", WebsocketHandler)
+	http.HandleFunc("/ws", impl.WebsocketHandler)
 }
 
 func main() {
