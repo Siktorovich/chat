@@ -13,5 +13,5 @@ func init() {
 }
 
 func main() {
-	log.Fatal(http.ListenAndServe("logalhost:8000", nil))
+	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
